@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://use.fontawesome.com/16032a5bab.js"></script>
+
+<style type="text/css">
+	*{
+		margin:0; 
+		padding:0;
+      
+	}
+	body{
+		background-color:#171c32;
+		font-size:18px;
+    padding:10px;
+	}
+	h2,h3,h4,h5,h6,p{
+		color:#ffffff;
+	}
+  h2{
+    font-size:4rem;
+    font-weight:bold; 
+
+  }
+	h3{
+		font-size:3rem;
+	}
+	h5{
+		font-size:1.5rem;
+	}
+	.navbar-nav{
+		border-bottom-left-radius:50px;
+		border-top-left-radius:50px;
+		background:#ffffff;
+	}
+	.nav-link{
+		font-weight:bold;
+	}
+
+.details{
+  background-color:#252c48;
+
+}
+.details .row .col-md img{
+  max-width:550px;
+  width:100%;
+  object-fit:cover;
+  height:350px;
+  border-radius:30px; 
+}
+.flip-card {
+   max-width:550px;
+  width:100%;
+  object-fit:cover;
+  height:350px;
+  border-radius:30px; 
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius:30px; 
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius:30px; 
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  border-radius:30px; 
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  border-radius:30px; 
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body data-barba="wrapper">
+<div class="wrapper">
+<nav class="navbar navbar-expand-lg justify-content-end"> 
+  <div class="collapse" id="one">
+    <ul class="navbar-nav navbar-dark p-3 mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <button class="btn p-4 btn-light" data-toggle="collapse" data-target="#one" aria-expanded="false" aria-controls="one">
+<i class="fa fa-bars text-dark" aria-hidden="true"></i>
+</button>
+</nav>
+<main class="pb-5" data-barba="container" data-barba-namespace="home">
+<h3 class="text-center pb-5">WEB <span class="text-primary">DEVELOPMENT</span></h3>
+<div class="container rounded  p-5 details">
+<div class="row ">
+<div class="col-md flip-card ">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="find1.jpg" alt="Avatar">
+    </div>
+    <div class="flip-card-back p-md-5">
+      <a href="https://skbassociate.com" class="text-light" target="_blank"><h1>SKB ASSOCIATE</h1>
+      <p>This website has several features such as Bootstrap Grid function,flex,optimized images,php functional contact form and AOS light weighted animation.</p>
+      <p>Programming Language: PHP,Javascript,HTML and CSS</p></a>
+    </div>
+  </div>
+</div>
+<div class="col-md flip-card ">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="find4.jpg" alt="Avatar">
+    </div>
+    <div class="flip-card-back p-md-4">
+      <a href="https://horrorstoriesbypaelkhugan.skbassociate.com" class="text-light" target="_blank"><h1>HORROR STORIES BY PAEL KHUGAN</h1>
+      <p>Features used Bootstrap Grid function,flex,optimized images,PHP functional contact form,Woocommerce,Customized Wordpress theme and Stripe payment gateway.</p>
+      <p>Programming Language: PHP,Javascript,Jquery,HTML and CSS</p></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-md flip-card ">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="find3.jpg" alt="Avatar">
+    </div>
+    <div class="flip-card-back p-md-5">
+      <a href="https://sithiaslinah.github.io/okk/01_theme1/home.html" class="text-light" target="_blank"><h1>RESTAURANT BOOTSTRAP</h1>
+      <p>This website has several features such as Bootstrap Grid function,flex,optimized images,php functional contact form and Javascript light weighted animation.</p>
+      <p>Programming Language: PHP,Javascript,HTML and CSS</p></a>
+    </div>
+  </div>
+</div>
+<div class="col-md flip-card ">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="find5.jpg" alt="Avatar">
+    </div>
+    <div class="flip-card-back p-md-4">
+      <a href="https://sithiaslinah.github.io/okk/02_theme2/home2.html" class="text-light" target="_blank"><h1>MODERN BOOTSTRAP</h1>
+      <p>This website has several features such as Bootstrap Grid function,flex,optimized images,php functional contact form and Javascript light weighted animation.</p>
+      <p>Programming Language: PHP,Javascript,Jquery,HTML and CSS</p></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</main>
+<!-- unpkg -->
+<script type="text/javascript" src="type.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<!-- jsdelivr -->
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script>
+ /*barba.init({
+  transitions: [{
+    name: 'default-transition',
+    leave(data) {
+      return gsap.to(data.current.container, {
+        duration: 2, x:1250, ease: "bounce"
+      });
+    },
+    enter(data) {
+      return gsap.from(data.next.container, {
+        duration: 2, x:600, ease: "bounce"
+      });
+    }
+  }]
+});*/
+</script>
+
+</div>
+</body>
+</html>
