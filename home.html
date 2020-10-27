@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://use.fontawesome.com/16032a5bab.js"></script>
+<script type="text/javascript" src="type.js"></script>
+<style type="text/css">
+	*{
+		margin:0; 
+		padding:0;
+      
+	}
+	body{
+		background-color:#171c32;
+		font-size:18px;
+    padding:10px;
+	}
+	h3,h5,p{
+		color:#ffffff;
+	}
+	h3{
+		font-size:3rem;
+	}
+	h5{
+		font-size:1.5rem;
+	}
+	.navbar-nav{
+		border-bottom-left-radius:50px;
+		border-top-left-radius:50px;
+		background:#ffffff;
+	}
+	.nav-link{
+		font-weight:bold;
+	}
+	.myself{
+	 border-width:15px;  
+    border-style:outset;
+    border-color:#007bff;
+    max-width:600px;
+    width:100%;
+    border-radius:10px;
+	}
+   .bubble {
+    width:40px;
+    min-width:100px;
+    background:#0265fa;
+    display: block;
+    margin-top: 50px;
+    font-size:20px;
+    text-align: center;
+    color:white;
+}
+
+.pointer {
+    height: 20px;
+    width: 20px;
+    background:#0265fa;
+    transform: rotate(45deg);
+
+    margin-top: -12px;
+    position: relative;
+    left:0.5vw;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg justify-content-end"> 
+  <div class="collapse" id="one">
+    <ul class="navbar-nav navbar-dark p-3 mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <button class="btn p-4 btn-light" data-toggle="collapse" data-target="#one" aria-expanded="false" aria-controls="one">
+<i class="fa fa-bars text-dark" aria-hidden="true"></i>
+</button>
+</nav>
+<main class="pb-5">
+<div id="barba-wrapper">
+<div class="barba-container">
+<div class="container home" >
+<div class="row">
+	<div class="col-md">
+	<img src="myimg.jpg" class="myself">
+    </div>
+
+    <div class="col-md details pt-5">
+    <div class="bubble">Hello</div>
+    <div class="pointer"></div>
+    <h3>I'M <span class="text-primary">SITHI ASLINAH</span></h3>
+    <h5>I do W<span class="typewrite" data-period="2000" data-type='[ "eb Development.", "eb Design."]'>
+    <span class="wrap"></span></span></h5>
+    <p class="pt-2">With over 1+ years of job experience. I studied Information Technology at University and later honed my skills through commercial and freelance experience. My skills include PHP, Laravel, jQuery, Web design, JavaScript and MySQL.</p>
+    <a href="portfolio.html" class="btn btn-primary btn-lg"><i class="fa fa-briefcase" aria-hidden="true"></i> PortFolio</a>
+    </div>
+</div>
+</div></main>
+<!-- unpkg -->
+
+
+<!-- jsdelivr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js" integrity="sha512-j0ThLeHF8KI1DZjV/vAJ0CKkDAMAsZbFA1KarA2jIfzAmXn3di3krSq9LJrv/gBVsUnouKqS/agIoQpxj/3Hkg==" crossorigin="anonymous"></script>
+<script>
+/*Barba.Pjax.start();
+var FadeTransition = Barba.BaseTransition.extend({
+                    start: function() {
+                    /**
+     * This function is automatically called as soon the Transition starts
+     * this.newContainerLoading is a Promise for the loading of the new container
+     * (Barba.js also comes with an handy Promise polyfill!)
+     */
+                    // As soon the loading is finished and the old page is faded out, let's fade the new page
+                  /*  Promise
+                    .all([this.newContainerLoading, this.fadeOut()])
+                    .then(this.fadeIn.bind(this));
+                    },
+                    fadeOut: function() {
+                      
+                    },
+                    fadeIn: function() {
+                     this.newContainer.classList.add("slide-in");
+                     var that = this;
+                     this.newContainer.addEventListener('animationend',function(){
+
+                    that.newContainer.classList.remove('slide-in');
+                    that.done();
+                     });
+                   }
+                    });
+/**
+ * Next step, you have to tell Barba to use the new Transition
+ */
+/*Barba.Pjax.getTransition = function() {
+                    /**
+   * Here you can use your own logic!
+   * For example you can use different Transition based on the current page or link...
+   */
+                   /* return FadeTransition;
+};
+</script>
+
+</div>
+</body>
+</html>
